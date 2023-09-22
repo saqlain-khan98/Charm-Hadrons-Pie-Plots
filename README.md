@@ -15,4 +15,5 @@ This Python script visualizes the quark composition and lifetimes of charm hadro
    ```bash
    git clone https://github.com/saqlain-khan98/Charm-Hadrons-Pie-Plots
    cd Charm-Hadrons-Pie-Plots
-   python3 charm_hadrons.py```
+   python3 charm_hadrons.py
+   ```
