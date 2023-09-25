@@ -1,7 +1,7 @@
 # Charm-Hadrons-Pie-Plots
 
 
-This Python script visualizes the quark composition and lifetimes of charm hadrons using pie charts.
+This Python script visualizes the quark composition and lifetimes of charm hadrons using pie charts. The area of the pie chart is proportional to the lifetime of the hadron.
 
 ![Pie Charts](./charm_hadrons.png)
 
