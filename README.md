@@ -3,6 +3,8 @@
 
 This Python script visualizes the quark composition and lifetimes of charm hadrons using pie charts.
 
+![Pie Charts](./charm_hadrons.png)
+
 ## Requirements
 
 - Python 3
@@ -17,3 +19,4 @@ This Python script visualizes the quark composition and lifetimes of charm hadro
    cd Charm-Hadrons-Pie-Plots
    python3 charm_hadrons.py
    ```
+2. A png file named will be saved that will diplay quark compositions of ground-state charm meson and baryons according to quark model.
