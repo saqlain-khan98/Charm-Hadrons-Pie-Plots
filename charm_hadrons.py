@@ -23,15 +23,17 @@ areas = [lifetime / max(hadron_lifetimes)  for lifetime in hadron_lifetimes]
 fig, axs = plt.subplots(2, 5, figsize=(12, 6))
 fig.suptitle("Charm Hadrons Quark Composition and Lifetime", fontsize=16)
 
+#subplots for all charm hadrons 
 for i, ax in enumerate(axs.flatten()):
     if i < len(hadron_names):
         quarks = quark_compositions[i].split()
         quark_numbers = len(quarks)
+        # Distinguising between Mesons ans Baryons
         if quark_numbers == 2:
-            quark_percentages = [0.5,0.5]
+            quark_percentages = [0.5,0.5] # Creates two slices visualizing two quarks
             ax.pie(quark_percentages, labels=quarks,  startangle=90, radius=areas[i])
-        if quark_numbers == 3:
-            quark_percentages = [1/3,1/3,1/3]
+        if quark_numbers == 3:          
+            quark_percentages = [1/3,1/3,1/3]  # Creates three slices visualizing three quarks
             ax.pie(quark_percentages, labels=quarks, startangle=90, radius=areas[i])
         ax.set_title(hadron_names[i] + f" ({hadron_lifetimes[i]} fs)\n area = {round(areas[i],2)} ")
 
